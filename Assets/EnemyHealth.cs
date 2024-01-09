@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Health < currentHealth)
+        if (Health < currentHealth)
         {
             currentHealth = Health;
             anim.SetTrigger("Attacked");
@@ -27,8 +27,8 @@ public class EnemyHealth : MonoBehaviour
         if (Health <= 0)
         {
             anim.SetBool("isDead", true);
-            Debug.Log("Ded!");
+            Debug.Log("Dead!");
+            Destroy(gameObject,2f);
         }
-        
     }
 }
