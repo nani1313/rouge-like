@@ -586,5 +586,4 @@ MonoBehaviour:
   speed: 1
   distanceBetween: 5
   isRunning: 0
-  Player: {fileID: 0}
   flip: 0

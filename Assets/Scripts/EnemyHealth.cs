@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public float Health;
     public float currentHealth;
+
     private Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -27,8 +28,8 @@ public class EnemyHealth : MonoBehaviour
         if (Health <= 0)
         {
             anim.SetBool("isDead", true);
-            Debug.Log("Dead!");
-            Destroy(gameObject,2f);
+            Destroy(gameObject,0.5f);
         }
+  
     }
 }
